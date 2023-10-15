@@ -27,8 +27,8 @@ function Header() {
         <Container changeBackground={changeBackground}>
             <img src={Logo} alt="logo" />
             <Menu>
-                <Li isActive={pathname === '/'}>
-                    <Link to={'/'}>Menu</Link>
+                <Li isActive={pathname === '/devflix'}>
+                    <Link to={'/devflix'}>Menu</Link>
                 </Li>
                 <Li isActive={pathname.includes('filmes')}>
                     <Link to={'/filmes'}>Filmes</Link>
