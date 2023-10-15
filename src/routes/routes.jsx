@@ -13,7 +13,8 @@ function Rotas() {
     return (
         <Routes >
             <Route element={<Layout/>}>
-                <Route path="/" element={<Home />} />
+                <Route path="/devflix" element={<Home />} />
+                <Route path="/" element={<Home/>}/>
                 <Route path="/filmes" element={<Movies />} />
                 <Route path="/series" element={<Series />} />
             </Route>
