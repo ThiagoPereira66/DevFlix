@@ -8,7 +8,7 @@ import { useState } from "react"
 
 
 function Header() {
-    const [changeBackground , setChengeBackground] = useState(false) // efeito scroll
+    const [changeBackground , setChengeBackground] = useState('false') // efeito scroll
     const { pathname } = useLocation()
 
     window.onscroll = () => {  // efeito scroll
@@ -27,13 +27,13 @@ function Header() {
         <Container changeBackground={changeBackground}>
             <img src={Logo} alt="logo" />
             <Menu>
-                <Li isActive={pathname === '/devflix'}>
+                <Li isactive={pathname === "/"}>
                     <Link to={'/devflix'}>Menu</Link>
                 </Li>
-                <Li isActive={pathname.includes('filmes')}>
+                <Li isactive={pathname.includes('filmes')}>
                     <Link to={'/filmes'}>Filmes</Link>
                 </Li>
-                <Li isActive={pathname.includes('series')}>
+                <Li isactive={pathname.includes('series')}>
                     <Link to={'/series'}>Séries</Link>
                 </Li>
 
